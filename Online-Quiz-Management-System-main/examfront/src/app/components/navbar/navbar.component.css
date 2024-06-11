@@ -1,0 +1,19 @@
+.example-spacer {
+    flex: 1 1 auto;
+  } 
+.accent{
+  background-color: black; 
+ color:white
+} 
+.quote{
+  margin-right:220px;
+  font-size: larger;
+  font-family: "Brush Script", cursive;
+  color: gold;
+}
+.logout{
+  font-weight: bolder;
+  font-family: Dosis, cursive;
+  font-size: medium;
+  color:hotpink;
+}

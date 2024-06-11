@@ -1,0 +1,71 @@
+<!-- Represents a toolbar component in Angular Material for creating consistent UI elements. -->
+
+  <mat-toolbar class="accent">
+    <!-- mat-icon-button  Utilized for creating icon buttons with Angular Material design. -->
+   <a
+   routerLink="/"
+    mat-icon-button 
+   class="example-icon"
+    aria-label="Example icon-button with menu icon"
+    >
+    <!-- Displays an icon named "menu_book" using Angular Material's mat-icon component. -->
+
+    <mat-icon>menu_book</mat-icon>
+  </a>
+<!-- Span tag is used for inline styling or grouping elements without any semantic meaning. -->
+  <span>Become Pro</span>
+  <span class="example-spacer"></span> 
+
+  <span class="quote">Learning never exhausts the mind.</span>
+
+  <a
+  *ngIf="!isLoggedIn"
+  [routerLink]="'/login'" 
+  mat-icon-button
+   class="example-icon favorite-icon" 
+   aria-label="Example icon-button with heart icon"
+   >
+   Login
+    
+</a>
+
+
+  <a
+  *ngIf="!isLoggedIn"
+	  [routerLink]="'/signup'"
+
+   mat-icon-button                                     
+   class="example-icon favorite-icon mr20 ml20" 
+   aria-label="Example icon-button with share icon"
+   >
+   Register
+</a>
+
+<a
+  *ngIf="isLoggedIn"
+  (click)="logout()"
+
+   mat-icon-button                                     
+   class="example-icon favorite-icon mr20 ml20 logout" 
+   aria-label="Example icon-button with share icon"
+   >
+   Logout
+</a>
+  
+<button
+  *ngIf="isLoggedIn && user"
+  
+    style="margin-right: 50px;"
+   mat-icon-button                                     
+   class="example-icon favorite-icon  ml20 " 
+   aria-label="Example icon-button with share icon"
+   >
+   {{user.username}}
+</button>
+  
+
+
+
+</mat-toolbar>
+
+<!-- mat-icon-button if we not used this thenit shows as regular button -->

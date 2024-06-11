@@ -1,0 +1,15 @@
+.home{
+    margin-top: 70%;
+    color: wheat;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    
+}
+
+#background-image {
+    background-image: url('https://st3.depositphotos.com/7865540/12758/i/450/depositphotos_127583080-stock-photo-business-assessment-concept.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 85vh;
+}
